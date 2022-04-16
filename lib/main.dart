@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:xylophone/xylophone_page.dart';
+import 'package:xylophone/views/xylophone_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,8 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home:  XylophonePage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Xylophone',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const XylophonePage(),
     );
   }
 }
