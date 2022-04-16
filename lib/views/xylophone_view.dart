@@ -11,8 +11,8 @@ class XylophonePage extends StatefulWidget {
 }
 
 class _XylophonePageState extends State<XylophonePage> {
-  static AudioCache player = AudioCache();
-
+ 
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
